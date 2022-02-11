@@ -14,15 +14,15 @@
 <body>
     <main>
         <div class="container">
-            <div class="row d-flex align-items-center justify-content-center" style="padding-top: 20%;">
-                <div class="col-4 shadow text-center bg-light rounded-3">
+            <div class="row d-flex align-items-center justify-content-center g-2" style="padding-top: 20%;">
+                <div class="col-md-6 col-lg-4 shadow text-center bg-light rounded-3">
                     <div>
                         <h1 class="my-3" id="color">#FFFFFF</h1>
                         <div class="d-flex justify-content-between m-3">
                             <a type="button" class="w-100 btn btn-primary btn-sm mx-2" onclick="changeColor()">
                                 Generate random Background
                             </a>
-                            <a type="button" class="w-100 btn btn-danger btn-sm pt-3 mx-2" href=" ">
+                            <a type="button" class="w-100 btn btn-danger btn-sm pt-lg-3 mx-2" href=" ">
                                 Reset
                             </a>
                         </div>
@@ -30,8 +30,11 @@
                 </div>
             </div>
         </div>
-        <div class="container mt-5 w-50">
-            <div class="row row-cols-6 d-flex p-3 rounded-3" id="output">
+        <div class="container mt-5 d-flex align-items-center justify-content-center">
+            <div class="row col-md-8 col-lg-4 rounded-3 p-2" id="outputBlock">
+                <h4 class="d-block" id="titel"></h4>
+                <p class="d-block" id="subtitle"></p>
+                <div id="output" class="d-flex row row-cols-4 row-cols-md-5 p-2"></div>
             </div>
         </div>
     </main>
